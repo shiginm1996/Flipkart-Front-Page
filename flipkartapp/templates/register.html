@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <style>
+        #d {
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            background-repeat: no-repeat;
+            height: 665px;
+
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/0d3236b76b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="d">
+    <div style="height: 550px;width: 1000px; margin-left: 250px;margin-top: 80px;background-color: rgb(54, 54, 113);">
+        <div style="width: 450px;height: 500px;float: left;">
+            <img src="{% static 'sign.jpg' %}" alt="" height="250px" width="250px" style="margin-top: 120px; margin-left: 80px;">
+        </div>
+        <div style="width: 450px;height: 500px;float: left;">
+            <a href="http://127.0.0.1:8000/flipkartapp/login/" style=" margin-left: 527px;">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </a>
+            <H2 style="margin-left: 120px;color: white; text-shadow: 1px 1px 1px black;">Sign Up</H2><br>
+
+            <FORM action="post">
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">First Name:</label>
+                    <span class="input-group-text" style="margin-left: 115px;"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">Last Name:</label>
+                    <span class="input-group-text" style="margin-left: 115px;"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">Phone Number:</label>
+                    <span class="input-group-text" style="margin-left: 80px;"><i class="fa-solid fa-phone"></i></span>
+                    <input type="number" class="form-control" placeholder="+91-99xxxxxxxx">
+                </div>
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">Email:</label>
+                    <span class="input-group-text" style="margin-left: 150px;"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" class="form-control" placeholder="Abc123@gmail.com">
+                </div>
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">User Name:</label>
+                    <span class="input-group-text" style="margin-left: 110px;"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="User Name">
+                </div>
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">Password:</label>
+                    <span class="input-group-text" style="margin-left: 120px;"><i class="fa-solid fa-user"></i></span>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="input-group input-group-sm mb-4" style="width: 400px;">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: white;text-shadow: 1px 1px 1px black;">Confirm password:</label>
+                    <span class="input-group-text" style="margin-left: 60px;"><i class="fa-solid fa-user"></i></span>
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+                <button style="margin-left: 150px;border-radius: 10px;width: 100px;border: none;background-color: green;box-shadow: 5px 5px 5px black;">SUBMIT</button>
+
+
+            </FORM>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

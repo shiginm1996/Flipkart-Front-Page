@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/0d3236b76b.js" crossorigin="anonymous"></script>
+    <style>
+
+        body {
+            background-image: url({% static 'flip4.jpg' %});
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        #a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <div
+        style="height: 440px;width: 400px;margin-left: 550px;margin-top: 70px; background-color:white; border: 1px grey solid; border-radius: 10px;    ">
+        <a href="http://127.0.0.1:8000/flipkartapp/index/">
+            <i class="fa-solid fa-circle-xmark" style="margin-left: 380px;"></i>
+        </a><br>
+        <img src="{% static 'fliplog2.jpg' %}" alt="" height="80px" width="80px" style="margin-left: 150px;">
+        <h3 style="margin-left: 150px;">User Login</h3>
+        <input type="text" placeholder="Email or Phone Number"
+            style="height: 30px; width: 260px;margin-left: 70px;"><br>
+        <input type="password" placeholder="Password"
+            style="height: 30px;width: 260px;margin-left: 70px;margin-top: 20px;"><br>
+        <button
+            style="height: 35px;width: 260px;margin-left: 70px;margin-top: 20px;background-color: blue;border: none;border-radius: 6px;"
+            id="a">Login</button>
+        <h4 style="margin-left: 140px;color: blue;">Forgot Password?</h4>
+        <button
+            style="margin-left: 70px;height: 35px;width: 260px;background-color: green;border: none;border-radius: 6px;text-decoration: none;"
+            id="a">
+            <a href="http://127.0.0.1:8000/register/" class="btn" style="text-decoration: none;">Create New
+                Account</a>
+        </button>
+
+    </div>
+
+
+</body>
+
+</html>
